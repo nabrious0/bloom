@@ -28,7 +28,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				<Links />
 			</head>
 			<body>
-				<MotionConfig reducedMotion="userSetting">
+				<MotionConfig reducedMotion="user">
 					<Navbar />
 					{children}
 				</MotionConfig>
