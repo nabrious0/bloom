@@ -69,7 +69,7 @@ const ReviewMarquee = () => {
 								<motion.div className="absolute z-[21] left-1/2 -translate-x-1/2 w-30 lg:w-37 2xl:w-60" initial={{ translateY: 20, opacity: 0 }} whileInView={{ translateY: 0, opacity: 1 }} viewport={{ once: true, amount: 0.6 }} transition={{ delay: 3 }}>
 									<img
 										className="
-										transition-all ease-linear translate-y-13 translate-x-20 lg:translate-y-16 2xl:translate-y-40 2xl:translate-x-30 rotate-40 border-8 border-b-30 2xl:border-b-50 border-white rounded-sm shadow-lg shadow-brown-800/40 w-full"
+										transition-all ease-linear translate-y-13 translate-x-20 lg:translate-y-16 2xl:translate-y-48  rotate-40 border-8 border-b-30 2xl:border-b-50 border-white rounded-sm shadow-lg shadow-brown-800/40 w-full"
 										src="coffee-lander-5.jpg"
 										alt=""
 									/>
@@ -77,7 +77,7 @@ const ReviewMarquee = () => {
 								<motion.div className="absolute z-[21] left-1/2 -translate-x-1/2 w-30 lg:w-37 2xl:w-60" initial={{ translateY: 20, opacity: 0 }} whileInView={{ translateY: 0, opacity: 1 }} viewport={{ once: true, amount: 0.6 }} transition={{ delay: 2.5 }}>
 									<img
 										className="
-										transition-all ease-linear translate-y-13 -translate-x-20 lg:translate-y-16 2xl:translate-y-40 -rotate-40 border-8 border-b-30 2xl:border-b-50 border-white rounded-sm shadow-lg shadow-brown-800/40 w-full"
+										transition-all ease-linear translate-y-13 -translate-x-20 lg:translate-y-16 2xl:translate-y-48 -rotate-40 border-8 border-b-30 2xl:border-b-50 border-white rounded-sm shadow-lg shadow-brown-800/40 w-full"
 										src="coffee-lander-3.jpg"
 										alt=""
 									/>

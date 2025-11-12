@@ -86,7 +86,8 @@ const SubscriptionSection = () => {
 								<div className="text-2xl me-3 drop-shadow-xxs drop-shadow-white/55">
 									<BasketIcon weight="bold" />
 								</div>
-								<div>Get your Personalized Bloom Box</div>
+								<div className="hidden md:block">Get your Personalized Bloom Box</div>
+								<div className="block md:hidden">Shop Bloom Box</div>
 								<div className="text-2xl ms-3 drop-shadow-xxs drop-shadow-white/55">
 									<ArrowRightIcon weight="bold" />
 								</div>

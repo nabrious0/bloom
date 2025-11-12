@@ -37,7 +37,7 @@
 
 html,
 body {
-	@apply bg-brown-50 text-brown-800 font-rubik overflow-x-hidden;
+	@apply bg-brown-50 text-brown-800 font-rubik overflow-x-hidden selection:bg-brown-500/50 selection:text-brown-900;
 
 	@media (prefers-color-scheme: dark) {
 		color-scheme: dark;
