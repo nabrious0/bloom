@@ -1,4 +1,4 @@
-import type { ReactElement, ReactNode } from "react";
+import type { ReactElement } from "react";
 
 interface SubscriptionBenefitProps {
 	icon: ReactElement;

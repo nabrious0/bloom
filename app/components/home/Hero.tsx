@@ -4,6 +4,7 @@ import LogoMarquee from "~/components/home/LogoMarquee";
 import { useEffect, useRef, useState } from "react";
 import WidthContext from "./WidthContext";
 import { motion } from "motion/react";
+import { useNavbarHeightContext } from "../navbar/NavbarHeightContext";
 
 const Hero = () => {
 	const heroRef = useRef<HTMLDivElement | null>(null);
@@ -33,14 +34,17 @@ const Hero = () => {
 		currentWidth: width,
 	};
 
+	const { navbarHeight } = useNavbarHeightContext();
+
 	return (
 		<>
-			<div className="relative bg-[url('/hero.png')] bg-cover bg-center flex min-h-180 -mask-linear-180 mask-linear-from-90%">
+			<div id="heroSection" className="relative bg-[url('/hero.png')] bg-cover bg-center flex min-h-180 -mask-linear-180 mask-linear-from-90%">
 				<div className="absolute inset-0 bg-black/50 backdrop-blur-[2px] z-[1]" />
 				<div ref={heroRef} className="absolute max-w-3xl w-full" />
 				<div className="relative max-w-7xl mx-auto grow z-[2] py-10">
 					<div className="flex flex-col h-full w-full justify-center">
-						<div className="max-w-3xl px-4 pt-35 md:pt-0">
+						<div className="max-w-3xl px-4">
+							<div style={{ paddingTop: navbarHeight + 30 }} className="md:hidden" />
 							<motion.div initial={{ translateY: 20, opacity: 0 }} animate={{ translateY: 0, opacity: 1 }}>
 								<div className="text-5xl text-brown-50 mb-2 text-shadow-md text-shadow-black/50">
 									Your coffee is about to <span className="font-zalando-sans-expanded font-semibold">bloom.</span>

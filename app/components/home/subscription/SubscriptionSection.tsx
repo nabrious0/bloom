@@ -3,11 +3,14 @@ import Card from "../../ui/Card";
 import SubscriptionBenefit from "./SubscriptionBenefit";
 import Button from "~/components/ui/form/Button";
 import { motion, useReducedMotion } from "motion/react";
+import { useNavbarHeightContext } from "~/components/navbar/NavbarHeightContext";
 
 const SubscriptionSection = () => {
+	const { navbarHeight } = useNavbarHeightContext();
+
 	return (
 		<>
-			<div className="relative bg-brown-950 px-10 py-20 mt-5 [box-shadow:0_1px_0_0_rgb(255,255,255,80%)] mb-8 overflow-hidden">
+			<div id="subscriptionSection" style={{ paddingBlock: navbarHeight + 40 }} className="relative bg-brown-950 px-10 mt-5 [box-shadow:0_1px_0_0_rgb(255,255,255,80%)] mb-8 overflow-hidden">
 				<div className="absolute z-[2] -inset-x-10 bg-black/80 h-10 blur-sm top-0 -mt-10"></div>
 				<motion.div className="relative z-50" whileInView={{ translateY: 0, opacity: 1 }} viewport={{ once: true, amount: 0.5 }} initial={{ translateY: 120, opacity: 0 }}>
 					<div className="max-w-3xl">

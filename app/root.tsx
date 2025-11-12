@@ -29,10 +29,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				<Links />
 			</head>
 			<body>
-				<MotionConfig reducedMotion="user">
-					<Navbar />
-					{children}
-				</MotionConfig>
+				<MotionConfig reducedMotion="user">{children}</MotionConfig>
 				<ScrollRestoration />
 				<Scripts />
 			</body>

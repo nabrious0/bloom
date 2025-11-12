@@ -25,7 +25,7 @@ const ReviewMarquee = () => {
 
 	return (
 		<>
-			<motion.div initial={{ translateY: 20, opacity: 0 }} animate={{ translateY: 0, opacity: 1 }} transition={{ delay: 1 }}>
+			<motion.div id="reviewSection" initial={{ translateY: 20, opacity: 0 }} animate={{ translateY: 0, opacity: 1 }} transition={{ delay: 1 }}>
 				<div className="px-10 mt-10 mb-20">
 					<div className="flex flex-wrap -mx-2">
 						<div className="w-full md:w-1/2 px-2 relative z-[22] [text-shadow:0_0_8px_var(--color-brown-50),0_0_8px_var(--color-brown-50),0_0_8px_var(--color-brown-50),0_0_8px_var(--color-brown-50),0_0_8px_var(--color-brown-50),0_0_8px_var(--color-brown-50),0_0_8px_var(--color-brown-50),0_0_8px_var(--color-brown-50),0_0_8px_var(--color-brown-50)]">
