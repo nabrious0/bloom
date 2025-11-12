@@ -103,7 +103,7 @@ const SubscriptionSection = () => {
 					viewport={{ amount: 0.4, once: true }} 
 					transition={{ duration: 1 }} 
 				>
-					<div className="bg-[url('box.jpg')] bg-center bg-no-repeat h-full"></div>
+					<div className="bg-center bg-no-repeat h-full" style={{backgroundImage: `url('box.jpg')`}}></div>
 				</motion.div>
 				<div className="absolute z-[2] -inset-x-10 bg-black h-10 blur-sm bottom-0 -mb-10"></div>
 			</div>
