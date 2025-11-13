@@ -1,9 +1,12 @@
-import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
+import { isRouteErrorResponse, Link, Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
 
 import type { Route } from "./+types/root";
 import "./app.css";
 import Navbar from "./components/navbar/Navbar";
-import { MotionConfig } from "motion/react";
+import { MotionConfig, motion } from "motion/react";
+import { ArrowRightIcon, XIcon } from "@phosphor-icons/react";
+import { useState } from "react";
+import FictionalAlert from "./components/ui/FictionalAlert";
 
 export const links: Route.LinksFunction = () => [
 	{ rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -29,7 +32,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				<Links />
 			</head>
 			<body>
-				<MotionConfig reducedMotion="user">{children}</MotionConfig>
+				<MotionConfig reducedMotion="user">
+					{children}
+					<FictionalAlert />
+				</MotionConfig>
 				<ScrollRestoration />
 				<Scripts />
 			</body>
