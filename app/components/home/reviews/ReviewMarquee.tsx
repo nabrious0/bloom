@@ -42,7 +42,7 @@ const ReviewMarquee = () => {
 						</div>
 						<div className="w-full -mt-20 md:mt-0 md:w-1/2 px-2">
 							<div className="relative">
-								<motion.div className="absolute left-1/2 -translate-x-1/2 w-30 lg:w-37 2xl:w-60" initial={{ translateY: 20, opacity: 0 }} whileInView={{ translateY: 0, opacity: 1 }} viewport={{ once: true, amount: 0.6 }} transition={{ delay: 1 }}>
+								<motion.div className="absolute left-1/2 -translate-x-1/2 w-30 lg:w-37 2xl:w-60" initial={{ translateY: 20, opacity: 0 }} whileInView={{ translateY: 0, opacity: 1 }} viewport={{ once: true, amount: 0.6 }} transition={{ delay: 0 }}>
 									<img
 										className="
 										transition-all ease-linear -translate-x-25 lg:-translate-x-28 2xl:-translate-x-45 -rotate-30 border-8 border-b-30 2xl:border-b-50 border-white rounded-sm shadow-lg shadow-brown-800/40 w-full"
@@ -50,7 +50,7 @@ const ReviewMarquee = () => {
 										alt=""
 									/>
 								</motion.div>
-								<motion.div className="absolute left-1/2 -translate-x-1/2 w-30 lg:w-37 2xl:w-60" initial={{ translateY: 20, opacity: 0 }} whileInView={{ translateY: 0, opacity: 1 }} viewport={{ once: true, amount: 0.6 }} transition={{ delay: 1.5 }}>
+								<motion.div className="absolute left-1/2 -translate-x-1/2 w-30 lg:w-37 2xl:w-60" initial={{ translateY: 20, opacity: 0 }} whileInView={{ translateY: 0, opacity: 1 }} viewport={{ once: true, amount: 0.6 }} transition={{ delay: 0.5 }}>
 									<img
 										className="
 										transition-all ease-linear translate-x-25 lg:translate-x-28 2xl:translate-x-45 rotate-30 border-8 border-b-30 2xl:border-b-50 border-white rounded-sm shadow-lg shadow-brown-800/40 w-full"
@@ -58,7 +58,7 @@ const ReviewMarquee = () => {
 										alt=""
 									/>
 								</motion.div>
-								<motion.div className="absolute left-1/2 -translate-x-1/2 w-30 lg:w-37 2xl:w-60" initial={{ translateY: 20, opacity: 0 }} whileInView={{ translateY: 0, opacity: 1 }} viewport={{ once: true, amount: 0.6 }} transition={{ delay: 2 }}>
+								<motion.div className="absolute left-1/2 -translate-x-1/2 w-30 lg:w-37 2xl:w-60" initial={{ translateY: 20, opacity: 0 }} whileInView={{ translateY: 0, opacity: 1 }} viewport={{ once: true, amount: 0.6 }} transition={{ delay: 1 }}>
 									<img
 										className="
 										transition-all ease-linear -translate-y-8 lg:-translate-y-18 2xl:-translate-y-20 border-8 border-b-30 2xl:border-b-50 border-white rounded-sm shadow-lg shadow-brown-800/40 w-full"
@@ -66,7 +66,7 @@ const ReviewMarquee = () => {
 										alt=""
 									/>
 								</motion.div>
-								<motion.div className="absolute z-[21] left-1/2 -translate-x-1/2 w-30 lg:w-37 2xl:w-60" initial={{ translateY: 20, opacity: 0 }} whileInView={{ translateY: 0, opacity: 1 }} viewport={{ once: true, amount: 0.6 }} transition={{ delay: 3 }}>
+								<motion.div className="absolute z-[21] left-1/2 -translate-x-1/2 w-30 lg:w-37 2xl:w-60" initial={{ translateY: 20, opacity: 0 }} whileInView={{ translateY: 0, opacity: 1 }} viewport={{ once: true, amount: 0.6 }} transition={{ delay: 2 }}>
 									<img
 										className="
 										transition-all ease-linear translate-y-13 translate-x-20 lg:translate-y-16 2xl:translate-y-48  rotate-40 border-8 border-b-30 2xl:border-b-50 border-white rounded-sm shadow-lg shadow-brown-800/40 w-full"
@@ -74,7 +74,7 @@ const ReviewMarquee = () => {
 										alt=""
 									/>
 								</motion.div>
-								<motion.div className="absolute z-[21] left-1/2 -translate-x-1/2 w-30 lg:w-37 2xl:w-60" initial={{ translateY: 20, opacity: 0 }} whileInView={{ translateY: 0, opacity: 1 }} viewport={{ once: true, amount: 0.6 }} transition={{ delay: 2.5 }}>
+								<motion.div className="absolute z-[21] left-1/2 -translate-x-1/2 w-30 lg:w-37 2xl:w-60" initial={{ translateY: 20, opacity: 0 }} whileInView={{ translateY: 0, opacity: 1 }} viewport={{ once: true, amount: 0.6 }} transition={{ delay: 1.5 }}>
 									<img
 										className="
 										transition-all ease-linear translate-y-13 -translate-x-20 lg:translate-y-16 2xl:translate-y-48 -rotate-40 border-8 border-b-30 2xl:border-b-50 border-white rounded-sm shadow-lg shadow-brown-800/40 w-full"
@@ -87,7 +87,7 @@ const ReviewMarquee = () => {
 					</div>
 				</div>
 			</motion.div>
-			<motion.div className="relative z-[30]" initial={{ translateY: 50, opacity: 0 }} whileInView={{ translateY: 0, opacity: 1 }} transition={{ delay: 0.1, duration: 0.6 }} viewport={{ once: true, amount: 0.5 }}>
+			<motion.div className="relative z-[30] mb-3" initial={{ translateY: 50, opacity: 0 }} whileInView={{ translateY: 0, opacity: 1 }} transition={{ delay: 0.1, duration: 0.6 }} viewport={{ once: true, amount: 0.5 }}>
 				<div className="relative overflow-x-hidden w-full mask-x-from-95% motion-reduce:hidden">
 					<ScrollDuplicator>
 						<div className="w-[400px]">
