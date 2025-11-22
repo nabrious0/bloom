@@ -55,7 +55,7 @@ const Navbar = ({ scrollTo, onHeightChange }: NavbarProps) => {
 								<div className="flex justify-end w-full md:ms-auto">
 									<div className="flex justify-end flex-wrap w-full md:flex-nowrap">
 										<div className="w-[50%] sm:w-[50%] md:w-[unset] text-center">
-											<button onClick={() => scrollTo("heroSection")} className="cursor-pointer w-full flex justify-center items-center text-shadow-sm text-shadow-black/10 h-full py-1 px-4 rounded-lg gap-2 text-white/95 transition-all ease-linear hover:bg-brown-50/8 active:bg-brown-50/10">
+											<button onClick={() => scrollTo("heroSection")} className="cursor-pointer w-full flex justify-center items-center text-shadow-sm text-shadow-black/10 h-full py-1 px-4 rounded-lg gap-2 text-white/95 transition-[background] ease-linear ring-2 ring-transparent focus:outline-0 focus-visible:ring-blue-400 hover:bg-brown-50/8 active:bg-brown-50/10">
 												<div className="drop-shadow-sm drop-shadow-black/10 text-lg">
 													<HouseIcon weight="duotone" />
 												</div>
@@ -63,7 +63,7 @@ const Navbar = ({ scrollTo, onHeightChange }: NavbarProps) => {
 											</button>
 										</div>
 										<div className="w-[50%] sm:w-[50%] md:w-[unset] text-center">
-											<button onClick={() => scrollTo("reviewSection")} className="cursor-pointer w-full flex justify-center items-center text-shadow-sm text-shadow-black/10 h-full py-1 px-4 rounded-lg gap-2 text-white/95 transition-all ease-linear hover:bg-brown-50/8 active:bg-brown-50/10">
+											<button onClick={() => scrollTo("reviewSection")} className="cursor-pointer w-full flex justify-center items-center text-shadow-sm text-shadow-black/10 h-full py-1 px-4 rounded-lg gap-2 text-white/95 transition-[background] ease-linear ring-2 ring-transparent focus:outline-0 focus-visible:ring-blue-400 hover:bg-brown-50/8 active:bg-brown-50/10">
 												<div className="drop-shadow-sm drop-shadow-black/10 text-lg">
 													<InfoIcon weight="duotone" />
 												</div>
@@ -71,7 +71,7 @@ const Navbar = ({ scrollTo, onHeightChange }: NavbarProps) => {
 											</button>
 										</div>
 										<div className="w-[100%] sm:w-[50%] md:w-[unset] text-center">
-											<button onClick={() => scrollTo("subscriptionSection")} className="cursor-pointer w-full flex justify-center items-center text-shadow-sm text-shadow-black/10 h-full py-1 px-4 rounded-lg gap-2 text-white/95 transition-all ease-linear hover:bg-brown-50/8 active:bg-brown-50/10">
+											<button onClick={() => scrollTo("subscriptionSection")} className="cursor-pointer w-full flex justify-center items-center text-shadow-sm text-shadow-black/10 h-full py-1 px-4 rounded-lg gap-2 text-white/95 transition-[background] ease-linear ring-2 ring-transparent focus:outline-0 focus-visible:ring-blue-400 hover:bg-brown-50/8 active:bg-brown-50/10">
 												<div className="drop-shadow-sm drop-shadow-black/10 text-lg">
 													<PackageIcon weight="duotone" />
 												</div>
@@ -79,7 +79,7 @@ const Navbar = ({ scrollTo, onHeightChange }: NavbarProps) => {
 											</button>
 										</div>
 										<div className="w-[100%] sm:w-[50%] md:w-[unset] text-center">
-											<button onClick={() => scrollTo("purchaseSection")} className="cursor-pointer w-full flex justify-center items-center text-shadow-sm text-shadow-black/10 h-full py-1 px-4 rounded-lg gap-2 text-white/95 transition-all ease-linear hover:bg-brown-50/8 active:bg-brown-50/10">
+											<button onClick={() => scrollTo("purchaseSection")} className="cursor-pointer w-full flex justify-center items-center text-shadow-sm text-shadow-black/10 h-full py-1 px-4 rounded-lg gap-2 text-white/95 transition-[background] ease-linear ring-2 ring-transparent focus:outline-0 focus-visible:ring-blue-400 hover:bg-brown-50/8 active:bg-brown-50/10">
 												<div className="drop-shadow-sm drop-shadow-black/10 text-lg">
 													<CoffeeIcon weight="duotone" />
 												</div>

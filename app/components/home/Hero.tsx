@@ -53,7 +53,7 @@ const Hero = () => {
 							</motion.div>
 							<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.5 }}>
 								<div className="flex flex-wrap flex-col sm:flex-row gap-2.5">
-									<Button color="primary">
+									<Button size="md" color="primary">
 										<div className="text-lg me-2 drop-shadow-xxs drop-shadow-white/55">
 											<CoffeeIcon weight="bold" />
 										</div>
@@ -64,7 +64,7 @@ const Hero = () => {
 											<ArrowRightIcon weight="bold" />
 										</div>
 									</Button>
-									<Button color="secondary">
+									<Button size="md" color="secondary">
 										<div className="text-lg me-2 drop-shadow-xxs drop-shadow-black/55">
 											<BasketIcon weight="bold" />
 										</div>

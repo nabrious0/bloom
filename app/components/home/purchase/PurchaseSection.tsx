@@ -60,7 +60,7 @@ const PurchaseSection = () => {
 						</motion.div>
 					</div>
 					<motion.div className="w-max mx-auto" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5, duration: 0.5 }} viewport={{ once: true }}>
-						<Button color="secondary">
+						<Button size="md" color="secondary">
 							<div className="text-lg me-2 drop-shadow-xxs drop-shadow-black/55">
 								<CirclesThreePlusIcon weight="bold" />
 							</div>

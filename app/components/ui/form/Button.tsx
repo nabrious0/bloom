@@ -9,7 +9,7 @@ interface ButtonProps {
 	children: ReactNode;
 }
 
-const buttonClasses: string = "relative inline-flex justify-center items-center cursor-pointer bg-gradient-to-t bg-white";
+const buttonClasses: string = "group relative inline-flex justify-center items-center cursor-pointer bg-gradient-to-t bg-white focus:outline-none";
 let buttonColors: string;
 let ringShadowColors: string;
 let buttonSize: string;
@@ -32,9 +32,6 @@ const Button = ({ href, children, color, size }: ButtonProps) => {
 		case "lg":
 			buttonSize = "px-10 py-1.5 min-h-[52px] text-xl rounded-2xl";
 			break;
-		default:
-			buttonSize = "px-5 py-1.5 min-h-[32px] rounded-xl";
-			break;
 	}
 	return (
 		<>
@@ -47,14 +44,18 @@ const Button = ({ href, children, color, size }: ButtonProps) => {
 					{/* prettier-ignore */}
 					<motion.button 
 						whileHover={{ scale: 1.04 }} 
-						whileTap={{ scale: 1 }} 
+						whileTap={{ scale: 0.97 }} 
 						transition={{ type: "spring", bounce: 0.65 }} 
 						className={`${buttonClasses} ${buttonColors} ${buttonSize}`}
 						style={{
 							boxShadow: `${ringShadowColors}`
 						}}
 					>
-						
+						{/* prettier-ignore */}
+						<div 
+							className="opacity-0 group-focus-visible:opacity-100 pointer-events-none absolute -inset-1 border-2 border-blue-400"
+							style={{ borderRadius: ( size === "md" ? "16px" : "20px" ) }}
+						/>
 						{children}
 					</motion.button>
 				</>

@@ -33,7 +33,7 @@ const CoffeeTypeCard = ({ name, description, origin, flavor, iconUrl }: CoffeeTy
 						</div>
 					</div>
 					<div className="w-max mt-auto mx-auto">
-						<Button color="secondary">
+						<Button size="md" color="secondary">
 							<div className="text-lg me-2 drop-shadow-xxs drop-shadow-black/55">
 								<ShoppingCartIcon weight="bold" />
 							</div>

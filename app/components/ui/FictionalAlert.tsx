@@ -37,7 +37,7 @@ const FictionalAlert = () => {
 											onClick={() => {
 												setIsVisible(false);
 											}}
-											className="flex justify-center items-center cursor-pointer text-xl text-indigo-700 h-[36px] w-[36px] rounded-full transition-all ease-linear duration-75 hover:bg-indigo-600/10 active:bg-indigo-600/15 active:scale-96"
+											className="flex justify-center items-center cursor-pointer text-xl text-indigo-700 h-[36px] w-[36px] rounded-full transition-all ease-linear duration-75 hover:bg-indigo-600/10 active:bg-indigo-600/15 ring-2 ring-transparent focus:outline-0 focus-visible:ring-blue-400 active:scale-96"
 										>
 											<XIcon weight="bold" />
 										</button>
@@ -49,7 +49,7 @@ const FictionalAlert = () => {
 										<div className="w-full md:w-1/2 px-1">
 											<motion.button
 												whileHover={{ scale: 1.04 }}
-												whileTap={{ scale: 1 }}
+												whileTap={{ scale: 0.97 }}
 												transition={{ type: "spring", bounce: 0.65 }}
 												onClick={() => {
 													setIsVisible(false);
@@ -60,8 +60,9 @@ const FictionalAlert = () => {
 											</motion.button>
 										</div>
 										<div className="w-full md:w-1/2 lg:w-full px-1">
-											<motion.div className="rounded-full" whileHover={{ scale: 1.04 }} whileTap={{ scale: 1 }} transition={{ type: "spring", bounce: 0.65 }}>
-												<Link target="_blank" rel="noopener noreferrer" to={"https://github.com/nabrious0/bloom"} className="w-full lg:w-[unset] text-center font-medium shadow-sm shadow-indigo-950/20 text-shadow-xs text-shadow-black/30 bg-gradient-to-t from-indigo-600 to-indigo-500 text-white rounded-full flex justify-center items-center min-h-[36px] px-5">
+											<motion.div tabIndex={-1} className="rounded-full" whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }} transition={{ type: "spring", bounce: 0.65 }}>
+												<Link target="_blank" rel="noopener noreferrer" to={"https://github.com/nabrious0/bloom"} className="relative group w-full lg:w-[unset] text-center font-medium shadow-sm shadow-indigo-950/20 text-shadow-xs text-shadow-black/30 bg-gradient-to-t from-indigo-600 to-indigo-500 text-white rounded-full flex justify-center items-center min-h-[36px] px-5 focus:outline-0">
+													<div className="opacity-0 group-focus-visible:opacity-100 pointer-events-none absolute -inset-1 border-2 border-blue-400 rounded-full" />
 													<div className="me-2">View on GitHub</div>
 													<div className="text-xl drop-shadow-xxs drop-shadow-black/30">
 														<ArrowRightIcon weight="bold" />
