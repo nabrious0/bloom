@@ -15,16 +15,16 @@ const SubscriptionSection = () => {
 				<motion.div 
 					layout
 					initial={{ 
-						height: 0
+						opacity: 0
 					}}
 					whileInView={{ 
-						height: "auto"
+						opacity: 1
 					}}
 					viewport={{ 
-						amount: 1, once: true
+						amount: 0.2, once: true
 					}}
 					transition={{ 
-						duration: 2, delay: 1
+						duration: 0.5
 					}}
 					className="relative px-10 bg-brown-950 [box-shadow:0_1px_0_0_rgb(255,255,255,80%)] overflow-hidden"
 				>
